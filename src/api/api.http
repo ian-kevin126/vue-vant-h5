@@ -1,0 +1,98 @@
+### 需要安装 vscode插件  rest client
+###  注意  post传输数据  要跟上面的隔开一行 否则会报错
+@host = http://118.190.206.2:19089
+@contentType = application/json
+@createdAt = {{$datetime iso8601}}
+@userAgent = rest-client
+@token=20072009251670003
+
+
+###
+POST {{host}}/organization/queryOrderList HTTP/1.1
+User-Agent: userAgent
+Content-Type: {{contentType}}
+
+{
+"cmd":"queryOrderList",
+"token":{{token}},
+"version":"1",
+"systemFlag":"zjyapp",
+"reqTime":"2020-07-20 09:25:22",
+"sourceFrom":"zjyxcx",
+"sourceFromDesc":"自家游小程序",
+"appType":"xcx",
+"params":{"cmd":"queryOrderList","des":"查询订单列表接口","pageNo":1,"onePageNum":10,"orderType":"","statusType":""}
+}
+###
+### 接口名称
+POST {{host}}/organization/queryInviteInfo HTTP/1.1
+User-Agent: userAgent
+Content-Type: {{contentType}}
+
+{
+ "cmd":"queryInviteInfo",
+ "token":{{token}},
+ "version":"1",
+ "systemFlag":"zjyapp",
+ "reqTime":"2020-05-18 14:31:17",
+ "sourceFrom":"zjyxcx",
+ "sourceFromDesc":"自家游小程序",
+ "appType":"xcx",
+ "params":{"des":"查询受邀用户信息","cmd":"queryInviteInfo","requestFlag":1}
+ }
+###
+GET  https://www.baidu.com HTTP/1.1
+###
+POST {{host}}/organization/queryInviteInfo HTTP/1.1
+User-Agent: userAgent
+Content-Type: {{contentType}}
+
+{
+ "cmd":"queryInviteInfo",
+ "token":{{token}},
+ "version":"1",
+ "systemFlag":"zjyapp",
+ "reqTime":"2020-05-18 14:31:17",
+ "sourceFrom":"zjyxcx",
+ "sourceFromDesc":"自家游小程序",
+ "appType":"xcx",
+ "params":{"des":"查询受邀用户信息","cmd":"queryInviteInfo","requestFlag":1}
+ }
+###
+
+
+POST {{host}}/organization/queryChaoShiCurrencyDetail HTTP/1.1
+User-Agent: userAgent
+Content-Type: {{contentType}}
+
+ {"cmd":"queryChaoShiCurrencyDetail",
+ "token":{{token}},
+ "version":"1",
+ "systemFlag":"zjyapp",
+ "reqTime":"2020-05-19 19:15:07",
+ "sourceFrom":"zjyxcx",
+ "sourceFromDesc":"自家游小程序",
+ "appType":"h5",
+ "params":{"des":"查询超势币明细","cmd":"queryChaoShiCurrencyDetail","pageNo":1,"onePageNum":15,"month":"2020-05"}}
+###
+POST {{host}}/organization/insertPayPass HTTP/1.1
+User-Agent: userAgent
+Content-Type: {{contentType}}
+
+ {"cmd":"insertPayPass",
+ "token":{{token}},
+ "version":"1",
+ "systemFlag":"zjyapp",
+ "reqTime":"2020-05-20 08:39:43",
+ "sourceFrom":"zjyxcx",
+ "sourceFromDesc":"自家游小程序",
+ "appType":"xcx",
+ "params":{"des":"修改支付密码","cmd":"insertPayPass","phone":"17695940786","code":"955365","password":"2338325"}}
+
+
+###
+POST {{host}}/organization/queryCreditOperList HTTP/1.1
+User-Agent: userAgent
+Content-Type: {{contentType}}
+
+ {"cmd":"queryCreditOperList","token":"20052008315660004","version":"1","systemFlag":"zjyapp","reqTime":"2020-05-20 08:54:49","sourceFrom":"zjyxcx","sourceFromDesc":"自家游小程序","appType":"h5","params":{"des":"查询积分变动记录【APP】","cmd":"queryCreditOperList","pageNo":1,"onePageNum":15,"month":"2020-05"}}
