@@ -22,7 +22,10 @@
       </div>
     </div>
     <!-- 牌 按钮 -->
-    <img class="ab paibtn" @click="shuffleCards" src="../../assets/images/p_cardbtn.png" />
+    <!-- <img class="ab paibtn" @click="shuffleCards" src="../../assets/images/p_cardbtn.png" /> -->
+    <div class="reset_btn">
+      <van-button @click="shuffleCards" type="danger">重新抽奖</van-button>
+    </div>
   </div>
 </template>
 
@@ -30,9 +33,10 @@
 import { mapActions, mapGetters } from 'vuex'
 const p_cardbg = require('../../assets/images/p_cardbg.png')
 const p_card01 = require('../../assets/images/p_card01.png')
+const p_card02 = require('../../assets/images/p_card02.png')
 const p_card03 = require('../../assets/images/p_card03.png')
 const p_card04 = require('../../assets/images/p_card04.png')
-const p_card02 = require('../../assets/images/p_card02.png')
+const p_card05 = require('../../assets/images/p_card05.png')
 const p_card06 = require('../../assets/images/p_card06.png')
 const p_cardno = require('../../assets/images/p_cardno.png')
 export default {
@@ -89,7 +93,7 @@ export default {
           pname: '运动装备'
         },
         {
-          frontimg: p_cardno,
+          frontimg: p_card05,
           top: 259,
           left: 386,
           iszhuan: false,
@@ -200,7 +204,7 @@ export default {
           pname: '运动装备'
         },
         {
-          frontimg: p_cardno,
+          frontimg: p_card05,
           top: 259,
           left: 386,
           iszhuan: true,
@@ -321,7 +325,7 @@ export default {
           pname: '运动装备'
         },
         {
-          frontimg: p_cardno,
+          frontimg: p_card05,
           top: 259,
           left: 386,
           iszhuan: false,
@@ -463,5 +467,10 @@ export default {
   height: 65px;
   top: 580px;
   left: 206px;
+}
+
+.reset_btn {
+  text-align: center;
+  margin-top: 50px;
 }
 </style>
