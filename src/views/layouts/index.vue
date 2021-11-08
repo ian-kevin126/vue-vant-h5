@@ -27,6 +27,13 @@ export default {
           icon: 'home-o'
         },
         {
+          title: '抽奖',
+          to: {
+            name: 'Prize'
+          },
+          icon: 'home-o'
+        },
+        {
           title: '关于我',
           to: {
             name: 'About'

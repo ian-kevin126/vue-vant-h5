@@ -30,6 +30,12 @@ export const constantRouterMap = [
         name: 'About',
         component: () => import('@/views/home/about'),
         meta: { title: '关于我', keepAlive: false, needLogin: false }
+      },
+      {
+        path: '/prize',
+        name: 'Prize',
+        component: () => import('@/views/home/prize'),
+        meta: { title: '关于我', keepAlive: false, needLogin: false }
       }
     ]
   },
