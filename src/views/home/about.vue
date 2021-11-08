@@ -4,7 +4,7 @@
     <div class="warpper">
       <div class="list">
         <div class="logo"></div>
-        <div class="demo-home__title">VUE H5开发模板</div>
+        <div class="demo-home__title">VUE VANT H5</div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="wechat">
@@ -12,7 +12,7 @@
         </div>
         <div class="item">
           {{ userName }}
-          <van-button v-if="userName == ''" type="warning" size="small" @click="doDispatch">快点我~</van-button>
+          <van-button v-if="userName == ''" type="warning" size="small" @click="doDispatch">点我~</van-button>
         </div>
       </div>
       <van-uploader accept="*.*">
