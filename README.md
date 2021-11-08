@@ -2,28 +2,14 @@
 
 基于 vue-cli4.0 + webpack 4 + vant ui + sass+ rem 适配方案+axios 封装，构建手机端模板脚手架
 
-掘金: [vue-cli4 vant rem 移动端框架方案](https://juejin.im/post/5cfefc73f265da1bba58f9f7)
-
-[查看 demo](https://solui.cn/vue-vant-h5/#/) 建议手机端查看
-
-<p>
-  <img src="./static/demo.png" width="320" style="display:inline;">
-</p>
-
 ### Node 版本要求
 
 `Vue CLI` 需要 Node.js 8.9 或更高版本 (推荐 8.11.0+)。你可以使用 [nvm](https://github.com/nvm-sh/nvm) 或
 [nvm-windows](https://github.com/coreybutler/nvm-windows) 在同一台电脑中管理多个 Node 版本。
 
-本示例 Node.js 12.14.1
-
 ### 启动项目
 
 ```bash
-
-git clone https://github.com/sunniejs/vue-vant-h5.git
-
-cd vue-vant-h5
 
 npm install
 
@@ -1123,12 +1109,3 @@ Vscode setting.json 设置
 ```
 
 [▲ 回顶部](#top)
-
-# 鸣谢 ​
-
-[vue-cli4-config](https://github.com/staven630/vue-cli4-config)  
-[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-
-# 关于我
-
-
