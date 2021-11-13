@@ -34,6 +34,13 @@ export default {
           icon: 'home-o'
         },
         {
+          title: '翻牌',
+          to: {
+            name: 'TurnLucky'
+          },
+          icon: 'home-o'
+        },
+        {
           title: '关于我',
           to: {
             name: 'About'

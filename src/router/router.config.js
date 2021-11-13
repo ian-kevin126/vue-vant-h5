@@ -36,6 +36,12 @@ export const constantRouterMap = [
         name: 'Prize',
         component: () => import('@/views/home/prize'),
         meta: { title: '关于我', keepAlive: false, needLogin: false }
+      },
+      {
+        path: '/turnLucky',
+        name: 'TurnLucky',
+        component: () => import('@/views/home/turnLucky'),
+        meta: { title: '翻牌', keepAlive: false, needLogin: false }
       }
     ]
   },
